@@ -1,0 +1,196 @@
+Colonial_Empire0 = {
+	category = DIP
+
+	bonus = {
+		diplomatic_upkeep = 2
+	}
+		
+
+	Colonial_Empire2 = {
+		colonists = 1
+		effect = { remove_temporary_colonist = yes }
+		
+	}
+	
+	Colonial_Empire1 = {
+		trade_company_governing_cost = -0.25
+	}
+	
+	Colonial_Empire4 = {
+		global_tariffs = 0.25
+		# <<WIKI>> global_tariffs = 0.05/Colonial Nation
+		# <<WIKI>> Inflation reduction = -0.025/Colonial Nation
+	}
+	
+	Colonial_Empire3 = {
+		global_manpower_modifier = 0.1
+		global_sailors_modifier = 0.1
+		# <<WIKI>> global_manpower_modifier = 0.05/Colonial Nation
+		# <<WIKI>> global_sailors_modifier = 0.05/Colonial Nation
+	}
+	
+	Colonial_Empire6 = {
+		naval_forcelimit_modifier = 0.25
+		# <<WIKI>> naval_forcelimit_modifier = 0.05/Colonial Nation
+	}
+
+	Colonial_Empire5 = {
+		build_cost = -0.1
+		# <<WIKI>> build_cost_in_colo_nation = -0.5
+	}
+	
+	Colonial_Empire7 = {
+		liberty_desire_from_subject_development = -0.25
+	}
+	
+	ai_will_do = {
+		factor = 15
+		modifier = {
+			factor = 0
+			num_of_colonists = 0
+		}
+		modifier = {
+			factor = 5
+			num_of_colonists = 1 
+		}
+		modifier = {
+			factor = 10
+			num_of_colonists = 2
+		}
+		modifier = {
+			factor = 2
+			personality = ai_diplomat
+		}
+		
+		modifier = {
+			factor = 2
+			personality = ai_militarist 
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				is_subject = yes
+				is_vassal = yes
+				is_colonial_nation = yes
+				is_tribal = yes
+				primitives = yes
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { num_of_ports = 1 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { num_of_ports = 2 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { num_of_ports = 3 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { num_of_ports = 4 }
+			num_of_cities = 4
+		}
+		modifier = {
+			factor = 2.0
+			num_of_ports = 5
+		}
+		modifier = {
+			factor = 2.0
+			num_of_ports = 10
+		}
+		modifier = {
+			factor = 2.0
+			num_of_ports = 15
+		}
+		modifier = {
+			factor = 2.0
+			num_of_ports = 20
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				tag = GBR
+				tag = NED
+				tag = ENG
+				tag = FRA
+				tag = CAS
+				tag = POR
+			}
+		}
+		# modifier = {
+		# 	factor = 2.5
+		# 	OR = {
+		# 		has_idea_group = maritime_ideas
+		# 		#has_idea_group = naval_ideas
+		# 	}
+		# }
+		# modifier = {
+		# 	factor = 25
+		# 	technology_group = western
+		# 	capital_scope = { region = iberia_region }
+		# 	any_known_country = {
+		# 		has_idea_group = exploration_ideas
+		# 	}
+		# 	num_of_ports = 3 
+		# }
+		modifier = {
+			factor = 10
+			personality = ai_colonialist
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_militarist
+		}
+		# modifier = {				factor = 3
+		# 	technology_group = western 
+		# 	num_of_ports = 5
+		# 	any_neighbor_country = {
+		# 		has_idea_group = exploration_ideas
+		# 			num_of_colonies = 1
+				
+		# 	}
+		# }
+		# modifier = {			
+		# 	factor = 3
+		# 	technology_group = western 
+		# 	num_of_ports = 3
+		# 	any_rival_country = {
+		# 		has_idea_group = exploration_ideas
+	
+		# 			num_of_colonies = 1
+				
+		# 	}
+		# }
+		# modifier = {			
+		# 	factor = 3
+		# 	num_of_ports = 9
+		# 	any_neighbor_country = {
+		# 		has_idea_group = exploration_ideas
+	
+		# 			num_of_colonies = 1
+				
+		# 	}
+		# }
+		# modifier = {			
+		# 	factor = 3
+		# 	num_of_ports = 7
+		# 	any_rival_country = {
+		# 		has_idea_group = exploration_ideas
+	
+		# 			num_of_colonies = 1
+				
+		# 	}
+		# }
+		# modifier = {
+		# 	factor = 2.0
+		# 	has_idea_group = exploration_ideas
+		# }
+		# modifier = {
+		# 	factor = 2.0
+		# 	has_idea_group = expansion_ideas
+		# }
+	}
+}

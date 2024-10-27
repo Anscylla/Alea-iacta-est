@@ -42,6 +42,7 @@ aristocracy_ideas = {
 	international_nobility = {
 		diplomats = 1
 		general_cost = -0.1
+		cavalry_shock = 0.2
 	}
 	rightful_conquest = {
 		fabricate_claims_cost = -0.5
@@ -163,7 +164,7 @@ horde_gov_ideas = {
 	}
 	
 	horse_lords = {
-		cavalry_cost = -0.33
+		cavalry_cost = -0.20
 		cav_to_inf_ratio = 0.10
 	}
 	beyond_the_sun = {
@@ -263,44 +264,44 @@ theocracy_gov_ideas = {
 	}
 }
 
-indigenous_ideas = {
-	category = MIL
+# indigenous_ideas = {
+# 	category = MIL
 
-	bonus = {
-		global_institution_spread = 0.25
-	}
+# 	bonus = {
+# 		global_institution_spread = 0.25
+# 	}
 
-	trigger = {
-		has_government_attribute = enables_natives_idea_group
-	}
+# 	trigger = {
+# 		has_government_attribute = enables_natives_idea_group
+# 	}
 
-	indigenous_bountiful_land = {
-		tribal_development_growth = 0.015
-		development_cost = -0.05
-	}
-	indigenous_irregular_warfare = {
-		hostile_attrition = 1
-	}
-	indigenous_constitution = {
-		monthly_reform_progress_modifier = 0.25
-	}
-	indigenous_braves = {
-		land_morale = 0.10
-	}
-	indigenous_controlled_burns = {
-		global_manpower_modifier = 0.15
-	}
-	indigenous_trade_with_foreigners = {
-		idea_cost = -0.1
-	}
-	indigenous_treaties = {
-		province_warscore_cost = -0.2
-	}
+# 	indigenous_bountiful_land = {
+# 		tribal_development_growth = 0.015
+# 		development_cost = -0.05
+# 	}
+# 	indigenous_irregular_warfare = {
+# 		hostile_attrition = 1
+# 	}
+# 	indigenous_constitution = {
+# 		monthly_reform_progress_modifier = 0.25
+# 	}
+# 	indigenous_braves = {
+# 		land_morale = 0.10
+# 	}
+# 	indigenous_controlled_burns = {
+# 		global_manpower_modifier = 0.15
+# 	}
+# 	indigenous_trade_with_foreigners = {
+# 		idea_cost = -0.1
+# 	}
+# 	indigenous_treaties = {
+# 		province_warscore_cost = -0.2
+# 	}
 
-	ai_will_do = {
-		factor = 10
-	}
-}
+# 	ai_will_do = {
+# 		factor = 10
+# 	}
+# }
 
 innovativeness_ideas = {
 	category = ADM
@@ -827,6 +828,7 @@ trade_ideas = {
   	}
 	merchant_adventures = {
 		trade_range_modifier = 0.25
+		trade_company_governing_cost = -0.1
 	}
 	national_trade_policy = {
 		trade_efficiency = 0.1
@@ -834,12 +836,14 @@ trade_ideas = {
 	}
 	overseas_merchants = {
 		placed_merchant_power = 15
+		trade_company_investment_cost = -0.1
 	}
 	trade_manipulation = {
 		trade_steering = 0.25
 	}
 	fast_negotiations = {
 		caravan_power = 0.25
+		naval_tradition_from_trade = 1
 	}
 
 	ai_will_do = {
@@ -960,6 +964,10 @@ exploration_ideas = {
 	category = DIP
 	important = yes
 
+	trigger = {
+		always = no
+	}
+	
 	bonus = {
 		cb_on_primitives = yes
 	}
@@ -1139,7 +1147,7 @@ maritime_ideas = {
 	category = DIP
 
 	trigger = {
-		primitives = no
+		always = no
 	}
 
 	bonus = {
@@ -1337,18 +1345,18 @@ quantity_ideas = {
 	category = MIL
 
 	bonus = {
-		land_forcelimit_modifier  = 0.33
+		land_forcelimit_modifier  = 0.40
 		num_of_pronoiars = 1
 	}
 	mass_army = {
-		global_manpower_modifier = 0.33
+		global_manpower_modifier = 0.35
 		num_of_pronoiars = 1
 	}
 	the_young_can_serve = {
 		manpower_recovery_speed = 0.20
 	}
 	enforced_service = {
-		global_regiment_cost = -0.1
+		global_regiment_cost = -0.15
 	}
 	camp_followers = {
 		global_supply_limit_modifier = 0.33
@@ -1357,7 +1365,7 @@ quantity_ideas = {
 		reinforce_cost_modifier = -0.33
 	}
 	the_old_and_infirm = {
-		land_maintenance_modifier = -0.05
+		land_maintenance_modifier = -0.10
 	}
 	expanded_supply_trains = {
 		land_attrition = -0.25
@@ -1412,6 +1420,10 @@ quantity_ideas = {
 expansion_ideas = {
 	category = ADM
 	important = yes
+
+	trigger = {
+		always = no
+	}
 
 	bonus = {
  		min_autonomy_in_territories = -0.1
@@ -1691,7 +1703,7 @@ naval_ideas = {
 	category = MIL
 
 	trigger = {
-		primitives = no
+		always = no
 	}
 
 	bonus = {
