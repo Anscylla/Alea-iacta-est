@@ -3,12 +3,12 @@ basic_idea_variation_act_22 = {
 	monarch_power = DIP
 
 	potential = {
-		has_idea_group = Colonial_Empire0
+		has_idea_group = Colonial_Empire
 		
 			
 	}
 	allow = {
-		full_idea_group = Colonial_Empire0
+		full_idea_group = Colonial_Empire
 	}
 	
 	native_assimilation = 0.5
@@ -23,12 +23,12 @@ idea_variation_act_41 = {
 	monarch_power = DIP
 
 	potential = {
-		has_idea_group = Colonial_Empire0
+		has_idea_group = Colonial_Empire
 		has_idea_group = innovativeness_ideas
 			
 	}
 	allow = {
-		full_idea_group = Colonial_Empire0
+		full_idea_group = Colonial_Empire
 		full_idea_group = innovativeness_ideas
 	}
 	
@@ -64,12 +64,12 @@ idea_variation_act_42 = {
 	monarch_power = DIP
 
 	potential = {
-		has_idea_group = Colonial_Empire0
+		has_idea_group = Colonial_Empire
 		has_idea_group = plutocracy_ideas
 			
 	}
 	allow = {
-		full_idea_group = Colonial_Empire0
+		full_idea_group = Colonial_Empire
 		full_idea_group = plutocracy_ideas
 	}
 	
@@ -92,7 +92,7 @@ idea_variation_act_43 = {
 	monarch_power = DIP
 
 	potential = {
-		has_idea_group = Colonial_Empire0
+		has_idea_group = Colonial_Empire
 		OR = {
 		has_idea_group = aristocracy_ideas
 		has_idea_group = horde_ideas
@@ -100,7 +100,7 @@ idea_variation_act_43 = {
 			
 	}
 	allow = {
-		full_idea_group = Colonial_Empire0
+		full_idea_group = Colonial_Empire
 		OR = {
 		has_idea_group = aristocracy_ideas
 		has_idea_group = horde_ideas
@@ -119,12 +119,12 @@ idea_variation_act_46 = {
 	monarch_power = DIP
 
 	potential = {
-		has_idea_group = Colonial_Empire0
+		has_idea_group = Colonial_Empire
 		has_idea_group = humanist_ideas 
 			
 	}
 	allow = {
-		full_idea_group = Colonial_Empire0
+		full_idea_group = Colonial_Empire
 		full_idea_group = humanist_ideas 
 	}
 	
@@ -147,12 +147,12 @@ idea_variation_act_111 = {
 	monarch_power = ADM
 
 	potential = {
-		has_idea_group = Colonial_Empire0
+		has_idea_group = Colonial_Empire
 		has_idea_group = administrative_ideas
 			
 	}
 	allow = {
-		full_idea_group = Colonial_Empire0
+		full_idea_group = Colonial_Empire
 		full_idea_group = administrative_ideas
 	}
 	
@@ -168,12 +168,12 @@ idea_variation_act_112 = {
 	monarch_power = DIP
 
 	potential = {
-		has_idea_group = Colonial_Empire0
+		has_idea_group = Colonial_Empire
 		has_idea_group = religious_ideas   
 				
 	}
 	allow = {
-		full_idea_group = Colonial_Empire0
+		full_idea_group = Colonial_Empire
 		full_idea_group = religious_ideas 	
 	}
 	
@@ -196,12 +196,12 @@ idea_variation_act_113 = {
 	monarch_power = DIP
 
 	potential = {
-		has_idea_group = Colonial_Empire0
+		has_idea_group = Colonial_Empire
 		has_idea_group = economic_ideas
 			
 	}
 	allow = {
-		full_idea_group = Colonial_Empire0
+		full_idea_group = Colonial_Empire
 		full_idea_group = economic_ideas
 	}
 	
@@ -238,12 +238,12 @@ idea_variation_act_114 = {
 	monarch_power = MIL
 
 	potential = {
-		has_idea_group = Colonial_Empire0
+		has_idea_group = Colonial_Empire
 		has_idea_group = defensive_ideas
 			
 	}
 	allow = {
-		full_idea_group = Colonial_Empire0
+		full_idea_group = Colonial_Empire
 		full_idea_group = defensive_ideas
 		
 		iv_policy_fire_damage_received = yes
@@ -261,12 +261,12 @@ idea_variation_act_115 = {
 	monarch_power = DIP
 
 	potential = {
-		has_idea_group = Colonial_Empire0
+		has_idea_group = Colonial_Empire
 		has_idea_group = offensive_ideas
 		
 	}
 	allow = {
-		full_idea_group = Colonial_Empire0
+		full_idea_group = Colonial_Empire
 		full_idea_group = offensive_ideas
 	}
 	
@@ -290,12 +290,12 @@ idea_variation_act_116 = {
 	monarch_power = DIP
 
 	potential = {
-		has_idea_group = Colonial_Empire0
+		has_idea_group = Colonial_Empire
 		has_idea_group = quality_ideas
 			
 	}
 	allow = {
-		full_idea_group = Colonial_Empire0
+		full_idea_group = Colonial_Empire
 		full_idea_group = quality_ideas
 	}
 	
@@ -320,12 +320,12 @@ idea_variation_act_117 = {
 	monarch_power = DIP
 
 	potential = {
-		has_idea_group = Colonial_Empire0
+		has_idea_group = Colonial_Empire
 		has_idea_group = quantity_ideas
 			
 	}
 	allow = {
-		full_idea_group = Colonial_Empire0
+		full_idea_group = Colonial_Empire
 		full_idea_group = quantity_ideas
 	}
 	
@@ -349,16 +349,245 @@ idea_variation_act_753 = {
 
 	potential = {
 		has_idea_group = infrastructure_ideas
-		has_idea_group = Colonial_Empire0
+		has_idea_group = Colonial_Empire
 		
 	}
 	
 	allow = {
 		full_idea_group = infrastructure_ideas
-		full_idea_group = Colonial_Empire0
+		full_idea_group = Colonial_Empire
 	}
 
 	global_colonial_growth = 20
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+basic_idea_variation_act_11 = {
+
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = Development_ideas
+		
+			
+	}
+	allow = {
+		full_idea_group = Development_ideas
+		iv_policy_all_groups = yes
+	}
+	
+	build_time = -0.25
+	
+	ai_will_do = {
+		factor = 1
+		
+	}
+}
+idea_variation_act_18 = {
+
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = Development_ideas
+		has_idea_group = trade_ideas 
+			
+	}
+	allow = {
+		full_idea_group = Development_ideas
+		full_idea_group = trade_ideas 
+	}
+	
+	merchants = 1
+	global_trade_power = 0.1
+
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { trade_income_percentage = 0.1 }
+		}			
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.2
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.3
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.4
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.5
+		}	
+	}
+}
+idea_variation_act_21 = {
+
+	monarch_power = ADM			
+
+	potential = {
+		has_idea_group = Development_ideas
+		has_idea_group = quantity_ideas
+			
+	}
+	allow = {
+		full_idea_group = Development_ideas
+		full_idea_group = quantity_ideas
+		
+		iv_policy_build_cost = yes
+	}
+	
+	build_cost = -0.1
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+idea_variation_act_24 = {
+
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = Development_ideas
+		has_idea_group = quality_ideas
+			
+	}
+	allow = {
+		full_idea_group = Development_ideas
+		full_idea_group = quality_ideas
+	}
+	
+	defensiveness = 0.1
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+idea_variation_act_118 = {
+
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = Colonial_Empire
+		has_idea_group = Development_ideas
+			
+	}
+	allow = {
+		full_idea_group = Colonial_Empire
+		full_idea_group = Development_ideas
+	}
+	
+	colonist_placement_chance = 0.10			
+	reduced_liberty_desire = 10
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+idea_variation_act_226 = {
+
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = spy_ideas 
+		has_idea_group = Development_ideas
+			
+	}
+	allow = {
+		full_idea_group = spy_ideas 
+		full_idea_group = Development_ideas
+	}
+	
+	spy_offence = 0.5
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+idea_variation_act_247 = {
+
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = influence_ideas 
+		has_idea_group = Development_ideas
+			
+	}
+	allow = {
+		full_idea_group = influence_ideas 
+		full_idea_group = Development_ideas
+	}
+	
+	diplomatic_annexation_cost = -0.10
+	diplomatic_reputation = 1
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+idea_variation_act_276 = {
+
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = defensive_ideas
+		has_idea_group = Development_ideas
+			
+	}
+	allow = {
+		full_idea_group = defensive_ideas
+		full_idea_group = Development_ideas
+	}
+	
+	defensiveness = 0.1
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+idea_variation_act_281 = {
+
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = offensive_ideas
+		has_idea_group = Development_ideas
+	
+	}
+	allow = {
+		full_idea_group = offensive_ideas
+		full_idea_group = Development_ideas
+	}
+	
+	global_regiment_cost = -0.15
+	global_regiment_recruit_speed = -0.2
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+idea_variation_act_680 = {
+	monarch_power = ADM	
+
+
+	potential = {
+		has_idea_group = court_ideas
+		has_idea_group = Development_ideas
+		
+	}
+	
+	allow = {
+		full_idea_group = court_ideas
+		full_idea_group = Development_ideas
+	}
+
+	global_allowed_num_of_buildings = 1
 	
 	ai_will_do = {
 		factor = 1
