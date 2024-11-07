@@ -386,7 +386,6 @@ estate_nobles_levies = {
 		}
 	} 
 	benefits = {
-		global_tax_modifier = -0.25
 		global_manpower_modifier = 0.2
 	}
 	influence_scaled_conditional_modifier = {
@@ -406,6 +405,7 @@ estate_nobles_levies = {
 		}
 	}
 	penalties = {
+		global_tax_modifier = -0.25
 	}
 	mechanics = {
 		exempt_from_seize_land

@@ -319,10 +319,10 @@ estate_maratha_levies = {
 		NOT = { has_estate_privilege = estate_maratha_levies_for_muslims }
 	}
 	benefits = {
-		global_tax_modifier = -0.25
 		global_manpower_modifier = 0.2
 	}
 	penalties = {
+		global_tax_modifier = -0.25
 	}
 	mechanics = {
 		exempt_from_seize_land
