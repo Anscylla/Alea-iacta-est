@@ -1,0 +1,6 @@
+cardinals_give_dev_cost = {
+
+	local_tax_modifier = 0.25
+	local_development_cost = -0.05
+
+}

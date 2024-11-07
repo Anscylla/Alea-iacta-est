@@ -1,0 +1,109 @@
+same_colonial_as_capital_check = {
+	OR = {
+		AND = {
+			colonial_region = colonial_alaska
+			capital_scope = {
+				colonial_region = colonial_alaska
+			}
+		}
+
+		AND = {
+			colonial_region = colonial_canada
+			capital_scope = {
+				colonial_region = colonial_canada
+			}
+		}
+
+		AND = {
+			colonial_region = colonial_eastern_america
+			capital_scope = {
+				colonial_region = colonial_eastern_america
+			}
+		}
+
+		AND = {
+			colonial_region = colonial_louisiana
+			capital_scope = {
+				colonial_region = colonial_louisiana
+			}
+		}
+
+		AND = {
+			colonial_region = colonial_california
+			capital_scope = {
+				colonial_region = colonial_california
+			}
+		}
+
+		AND = {
+			colonial_region = colonial_mexico
+			capital_scope = {
+				colonial_region = colonial_mexico
+			}
+		}
+
+		AND = {
+			colonial_region = colonial_the_carribean
+			capital_scope = {
+				colonial_region = colonial_the_carribean
+			}
+		}
+
+		AND = {
+			colonial_region = colonial_colombia
+			FROM = {
+				capital_scope = {
+					colonial_region = colonial_colombia
+				}
+			}
+		}
+
+		AND = {
+			colonial_region = colonial_peru
+			capital_scope = {
+				colonial_region = colonial_peru
+			}
+		}
+
+		AND = {
+			colonial_region = colonial_la_plata
+			capital_scope = {
+				colonial_region = colonial_la_plata
+			}
+		}
+
+		AND = {
+			colonial_region = colonial_brazil
+			capital_scope = {
+				colonial_region = colonial_brazil
+			}
+		}
+
+		AND = {
+			colonial_region = colonial_australia
+			capital_scope = {
+				colonial_region = colonial_australia
+			}
+		}
+		
+	}
+}
+
+is_in_colonial_region = {
+	OR = {
+		colonial_region = colonial_alaska
+		colonial_region = colonial_canada
+		colonial_region = colonial_eastern_america
+		colonial_region = colonial_louisiana
+		colonial_region = colonial_california
+		colonial_region = colonial_mexico
+		colonial_region = colonial_the_carribean
+		colonial_region = colonial_colombia
+		colonial_region = colonial_peru
+		colonial_region = colonial_la_plata
+		colonial_region = colonial_brazil
+		colonial_region = colonial_australia
+	}
+
+	
+}
