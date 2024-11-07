@@ -1,8 +1,5 @@
 # No previous file for Tionontate
 
-owner = TIO
-controller = TIO
-add_core = TIO
 
 culture = tionontate
 religion = totemism
@@ -19,4 +16,3 @@ native_hostileness = 2
 
 
 discovered_by = north_american
-
