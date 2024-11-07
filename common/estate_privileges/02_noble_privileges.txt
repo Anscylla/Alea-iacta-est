@@ -385,9 +385,9 @@ estate_nobles_levies = {
 			custom_tooltip = azt_estate_nobles_levies_scaled_modifier_tt
 		}
 	} 
-	modifier_by_land_ownership = {
-		global_tax_modifier = -0.10
-		global_manpower_modifier = 0.5
+	benefits = {
+		global_tax_modifier = -0.25
+		global_manpower_modifier = 0.2
 	}
 	influence_scaled_conditional_modifier = {
 		trigger = {

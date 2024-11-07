@@ -318,9 +318,9 @@ estate_maratha_levies = {
 		}
 		NOT = { has_estate_privilege = estate_maratha_levies_for_muslims }
 	}
-	modifier_by_land_ownership = {
-		global_tax_modifier = -0.10
-		global_manpower_modifier = 0.5
+	benefits = {
+		global_tax_modifier = -0.25
+		global_manpower_modifier = 0.2
 	}
 	penalties = {
 	}
