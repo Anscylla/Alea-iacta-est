@@ -1,13 +1,14 @@
-# No previous file for Kichesipi
+# No previous file for Madawaska
 
 
-culture = huron
+
+culture = maliseet
 religion = totemism
-capital = "Arendaronon"
-trade_goods = fur
+capital = "Madawaska"
+trade_goods = unknown
 hre = no
-base_tax = 2
-base_production = 2
+base_tax = 1 
+base_production = 1
 base_manpower = 1
 native_size = 5
 native_ferocity = 1

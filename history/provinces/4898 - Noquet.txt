@@ -1,9 +1,9 @@
-# No previous file for Saone
+# No previous file for Noquet
 
-culture = dakota
+culture = anishinabe
 religion = totemism
-capital = "Saone"
-trade_goods = unknown
+capital = "Noquet"
+trade_goods = fur
 hre = no
 base_tax = 3
 base_production = 2
@@ -11,6 +11,4 @@ base_manpower = 1
 native_size = 5
 native_ferocity = 1
 native_hostileness = 6
-
 discovered_by = north_american
-
