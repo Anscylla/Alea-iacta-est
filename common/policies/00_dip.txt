@@ -247,7 +247,7 @@ professional_diplomatic_corps = {
 	}
 	
 	diplomatic_reputation = 1
-	war_exhaustion = -0.075
+	war_exhaustion = -0.05
 
 	effect = {}
 	removed_effect = {}

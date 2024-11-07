@@ -699,7 +699,7 @@ military_allotment_act = {
 	}
 
 	global_manpower_modifier = 0.2
-	infantry_power = 5
+	infantry_power = 0.05
 
 	effect = {}
 	removed_effect = {}
@@ -952,7 +952,7 @@ psychological_warfare_policy = {
 		full_idea_group = spy_ideas
 	}
 
-	cavalry_flanking = 0.025
+	cavalry_flanking = 0.25
 	cavalry_power = 0.1
 
 	effect = {}

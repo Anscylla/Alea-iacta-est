@@ -1386,7 +1386,7 @@ celestial_offensive_policy = {
 		full_idea_group = offensive_ideas
 	}
 
-	artillery_power = 0.1
+	artillery_power = 0.075
 	
 	
 	ai_will_do = {

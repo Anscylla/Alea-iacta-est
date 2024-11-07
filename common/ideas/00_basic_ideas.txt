@@ -87,7 +87,6 @@ aristocracy_ideas = {
 	}
 }
 
-
 plutocracy_ideas = {
 	category = MIL
 
@@ -379,7 +378,6 @@ innovativeness_ideas = {
 	}
 }
 
-
 religious_ideas = {
 	category = ADM
 
@@ -461,7 +459,6 @@ religious_ideas = {
 	}
 }
 
-
 spy_ideas = {
 	category = DIP
 
@@ -522,7 +519,6 @@ spy_ideas = {
 	}
 }
 
-
 diplomatic_ideas = {
 	category = DIP
 	bonus = {
@@ -569,7 +565,6 @@ diplomatic_ideas = {
 		}
 	}
 }
-
 
 offensive_ideas = {
 	category = MIL
@@ -672,7 +667,6 @@ offensive_ideas = {
 		}
 	}
 }
-
 
 defensive_ideas = {
 	category = MIL
@@ -809,7 +803,6 @@ defensive_ideas = {
 	}
 }
 
-
 trade_ideas = {
 	category = DIP
 
@@ -880,9 +873,6 @@ trade_ideas = {
 		}
 	}
 }
-
-
-
 
 economic_ideas = {
 	category = ADM
@@ -960,7 +950,7 @@ economic_ideas = {
 	}
 }
 
-exploration_ideas = {
+# exploration_ideas = {
 	category = DIP
 	important = yes
 
@@ -1140,10 +1130,9 @@ exploration_ideas = {
 			}
 		}
 	}
-}
+# }
 
-
-maritime_ideas = {
+# maritime_ideas = {
 	category = DIP
 
 	trigger = {
@@ -1243,8 +1232,7 @@ maritime_ideas = {
 			has_government_attribute = is_pirate_republic_reform
 		}
 	}
-}
-
+# }
 
 quality_ideas = {
 	category = MIL
@@ -1340,7 +1328,6 @@ quality_ideas = {
 	}
 }
 
-
 quantity_ideas = {
 	category = MIL
 
@@ -1416,8 +1403,7 @@ quantity_ideas = {
 	}
 }
 
-
-expansion_ideas = {
+# expansion_ideas = {
 	category = ADM
 	important = yes
 
@@ -1501,8 +1487,7 @@ expansion_ideas = {
 			}
 		}
 	}
-}
-
+# }
 
 administrative_ideas = {
 	category = ADM
@@ -1699,7 +1684,7 @@ influence_ideas = {
 	}
 }
 
-naval_ideas = {
+# naval_ideas = {
 	category = MIL
 
 	trigger = {
@@ -1768,7 +1753,7 @@ naval_ideas = {
 			has_government_attribute = is_pirate_republic_reform
 		}
 	}
-}
+# }
 
 court_ideas = {
 	category = DIP
