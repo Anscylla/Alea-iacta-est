@@ -8,10 +8,6 @@ test_1 = {
 
 		is_colonial_nation = yes
 
-		capital_scope =  {
-			is_in_colonial_region = yes
-		}
-
-		NOT = { is_in_colonial_region = yes }
+		same_colonial_as_capital_check = yes
 	}
 }
