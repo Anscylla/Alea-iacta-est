@@ -1,0 +1,17 @@
+test_1 = {
+	potential = {
+
+		is_colonial_nation = yes
+		
+	}
+	trigger = {
+
+		is_colonial_nation = yes
+
+		capital_scope =  {
+			is_in_colonial_region = yes
+		}
+
+		NOT = { is_in_colonial_region = yes }
+	}
+}
