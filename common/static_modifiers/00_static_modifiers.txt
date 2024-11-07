@@ -1002,7 +1002,7 @@ legitimacy = {
 	tolerance_own = 2
 	tolerance_heathen = 2
 	tolerance_heretic = 2
-	diplomatic_reputation = 2
+	diplomatic_reputation = 4
 	vassal_income = 0.1
 	monthly_militarized_society = 0.05
 	max_absolutism = 20
@@ -1015,14 +1015,14 @@ legitimacy = {
 horde_unity = {
 	global_unrest = -4
 	discipline = 0.10
-	diplomatic_reputation = 2
+	diplomatic_reputation = 4
 	#nomadic_tribes_loyalty_modifier = 0.05	#New Change
 }
 
 # Multiplied by current Devotion - 50
 devotion = {
 	papal_influence = 2
-	diplomatic_reputation = 2
+	diplomatic_reputation = 4
 	monthly_fervor_increase = 2
 	church_power_modifier = 0.5
 	harmonization_speed = 0.5
@@ -1041,7 +1041,7 @@ devotion = {
 
 # Multiplied by current meritocracy - 50
 meritocracy = {
-	diplomatic_reputation = 2
+	diplomatic_reputation = 4
 	global_spy_defence = 1.0
 	advisor_cost = -0.5
 	reform_progress_growth = 0.5
@@ -2222,6 +2222,7 @@ over_governing_capacity_modifier = {
 	monthly_authority_power = 0.5
 	all_power_cost = 0.4
 	global_autonomy = 0.5
+	global_unrest = 4
 }
 
 #Scales with used capacity, being at full capacity means 100% of the modifier

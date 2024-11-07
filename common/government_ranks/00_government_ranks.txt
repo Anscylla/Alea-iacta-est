@@ -1,8 +1,13 @@
-
+1 = {
+	diplomatic_upkeep = 2
+	missionaries = 1
+}
 2 = {
 	diplomats = 1
 	governing_capacity = 200
 	global_autonomy = -0.025
+	diplomatic_upkeep = 2
+	missionaries = 1
 }
 
 3 = {
@@ -11,4 +16,6 @@
 	max_absolutism = 5
 	free_leader_pool = 1
 	diplomats = 2
+	diplomatic_upkeep = 2
+	missionaries = 1	
 }
