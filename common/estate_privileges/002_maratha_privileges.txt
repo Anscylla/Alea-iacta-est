@@ -893,7 +893,7 @@ estate_maratha_subject_rights = {
 	penalties = {
 	}
 	benefits = {
-		diplomatic_upkeep = 2
+		diplomatic_upkeep = 3
 		reduced_liberty_desire = 10
 	}
 	conditional_modifier = {
