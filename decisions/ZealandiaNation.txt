@@ -52,7 +52,12 @@ country_decisions = {
 		}
 		allow = {
 			adm_tech = 10
-			#is_free_or_tributary_trigger = yes
+			if = {
+				limit = {
+					ai = yes
+				}
+				is_free_or_tributary_trigger = yes
+			}
 			is_at_war = no
 			capital_scope = {
 				colonial_region = colonial_australia
@@ -170,7 +175,12 @@ country_decisions = {
 			}
 		}
 		allow = {
-			#is_free_or_tributary_trigger = yes
+			if = {
+				limit = {
+					ai = yes
+				}
+				is_free_or_tributary_trigger = yes
+			}
 			is_at_war = no
 			capital_scope = {
 				colonial_region = colonial_australia

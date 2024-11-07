@@ -1,13 +1,8 @@
-test_1 = {
-	potential = {
+# test_1 = {
+# 	potential = {
 
-		is_colonial_nation = yes
-		
-	}
-	trigger = {
+# 	}
+# 	trigger = {
 
-		is_colonial_nation = yes
-
-		same_colonial_as_capital_check = yes
-	}
-}
+# 	}
+# }

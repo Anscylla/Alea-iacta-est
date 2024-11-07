@@ -14,7 +14,12 @@ country_decisions = {
 				is_playing_custom_nation = no
 			}
 			OR = {
-				#is_free_or_tributary_trigger = yes
+				if = {
+				limit = {
+					ai = yes
+				}
+				is_free_or_tributary_trigger = yes
+			}
 				ai = no
 			}
 			NOT = { has_country_flag = changed_from_colonial_nation }
@@ -57,7 +62,12 @@ country_decisions = {
 		}
 		allow = {
 			adm_tech = 10
-			#is_free_or_tributary_trigger = yes
+			if = {
+				limit = {
+					ai = yes
+				}
+				is_free_or_tributary_trigger = yes
+			}
 			is_at_war = no
 			NOT = { exists = CAM }
 			num_of_owned_provinces_with = {
