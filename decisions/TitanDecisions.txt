@@ -1,0 +1,366 @@
+country_decisions = {
+	# Show available strong military events
+	PR_critical_events = {
+		color = { 229 56 18 }
+		major = yes
+		potential = {
+			ai = no
+			NOT = { has_country_flag = tm_hide_critical_event_decision }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = PR_radical_reform_decision
+				NOT = { has_country_flag = radical_mercantilist_reforms }
+			}
+			custom_trigger_tooltip = {
+				tooltip = PR_military_reform_decision
+				NOT = { has_country_flag = military_reform }
+			}
+			custom_trigger_tooltip = {
+				tooltip = PR_commandant_decision
+				NOT = { has_country_flag = commandant }
+			}
+			custom_trigger_tooltip = {
+				tooltip = PR_grand_captain_decision
+				NOT = { has_country_flag = grand_captain }
+			}
+			custom_trigger_tooltip = {
+				tooltip = PR_cannoneer_expert_decision
+				NOT = { has_country_flag = cannoneer_expert }
+			}
+			hidden_trigger = {
+				always = no
+			}
+		}
+		effect = {
+		}
+	}
+	
+	# Apply Manpower Edict
+	PR_manpower_edict = {
+		major = yes
+		potential = {
+			AND = {
+				NOT = { has_country_modifier = PR_manpower_edict_cooldown }
+				NOT = { has_country_flag = PR_manpower_edict_activated }
+			}
+		}
+		allow = {
+			ai = no
+		}
+		effect = {
+			custom_tooltip = PR_manpower_edict_tooltip
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						is_state_core = ROOT
+						NOT = {
+							has_any_state_edict = yes
+						}
+					}
+					add_province_modifier = {
+						name = PR_manpower_edict_province
+						duration = -1
+					}
+				}
+				add_country_modifier = {
+					name = "PR_manpower_edict_cooldown"
+					duration = 365
+					hidden = yes
+				}
+			}
+			set_country_flag = PR_manpower_edict_activated
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	# Remove Manpower Edict
+	PR_manpower_edict_removal = {
+		major = yes
+		potential = {
+			has_country_flag = PR_manpower_edict_activated
+		}
+		allow = {
+			ai = no
+			custom_trigger_tooltip = {
+				tooltip = PR_manpower_edict_removal_tooltip
+				NOT = {	has_country_modifier = PR_manpower_edict_cooldown }
+			}
+		}
+		effect = {
+			hidden_effect = {
+				every_owned_province = {
+					if = {
+						limit = { has_province_modifier = PR_manpower_edict_province }
+						remove_province_modifier = PR_manpower_edict_province
+					}
+				}
+			}
+			clr_country_flag = PR_manpower_edict_activated
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	sm_hire_general = {
+		potential = {
+			is_bankrupt = no
+			ai = no
+			NOT = { has_country_flag = sm_hire_general }
+		}
+		allow = {
+			NOT = { army_tradition = 40 }
+		}
+		effect = {
+			add_years_of_income = -0.3
+			create_general = { tradition = 40 }
+			set_country_flag = sm_hire_general
+		}
+	}
+
+	educate_ruler = {
+		color = { 229 56 18 }
+		major = yes
+		potential = {
+			ai = no
+			NOT = { has_country_flag = educate_ruler_flag }
+			NOT = {
+				government = republic
+			}
+			NOT = { has_country_flag = tm_hide_educate_ruler_decision }
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = educate_ruler_tooltip
+				OR = {
+					NOT = {
+						adm = 3
+						dip = 3
+						mil = 3
+					}
+					NOT = {
+						adm = 4
+						dip = 1
+						mil = 4
+					}
+					NOT = {
+						adm = 1
+						dip = 4
+						mil = 4
+					}
+					NOT = {
+						adm = 4
+						dip = 4
+						mil = 1
+					}
+					NOT = {
+						adm = 4
+						dip = 2
+						mil = 3
+					}
+					NOT = {
+						adm = 4
+						dip = 3
+						mil = 2
+					}
+					NOT = {
+						adm = 5
+						dip = 1
+						mil = 3
+					}
+					NOT = {
+						adm = 5
+						dip = 3
+						mil = 1
+					}
+					NOT = {
+						adm = 5
+						dip = 2
+						mil = 2
+					}
+					NOT = {
+						adm = 6
+						dip = 1
+						mil = 2
+					}
+					NOT = {
+						adm = 6
+						dip = 2
+						mil = 1
+					}
+					NOT = {
+						dip = 1
+						mil = 1
+					}
+					NOT = {
+						dip = 4
+						adm = 2
+						mil = 3
+					}
+					NOT = {
+						dip = 4
+						adm = 3
+						mil = 2
+					}
+					NOT = {
+						dip = 5
+						dip = 1
+						mil = 3
+					}
+					NOT = {
+						dip = 5
+						adm = 3
+						mil = 1
+					}
+					NOT = {
+						dip = 5
+						adm = 2
+						mil = 2
+					}
+					NOT = {
+						dip = 6
+						adm = 1
+						mil = 2
+					}
+					NOT = {
+						dip = 6
+						adm = 2
+						mil = 1
+					}
+					NOT = {
+						adm = 1
+						mil = 1
+					}
+					NOT = {
+						mil = 4
+						adm = 2
+						dip = 3
+					}
+					NOT = {
+						mil = 4
+						adm = 3
+						dip = 2
+					}
+					NOT = {
+						mil = 5
+						mil = 1
+						dip = 3
+					}
+					NOT = {
+						mil = 5
+						adm = 3
+						dip = 1
+					}
+					NOT = {
+						mil = 5
+						adm = 2
+						dip = 2
+					}
+					NOT = {
+						mil = 6
+						adm = 1
+						dip = 2
+					}
+					NOT = {
+						mil = 6
+						adm = 2
+						dip = 1
+					}
+					NOT = {
+						adm = 1
+						dip = 1
+					}
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = educate_ruler_once_tt
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
+			add_years_of_income = -0.4
+			set_country_flag = educate_ruler_flag
+		}
+	}
+	
+	tm_hire_conq_or_exp = {
+		potential = {
+			is_bankrupt = no
+			ai = no
+			adm_tech = 7
+			OR = {
+				NOT = { has_country_modifier = hired_explorer }
+				NOT = { has_country_modifier = hired_conquistador }
+			}
+			NOT = { has_country_flag = tm_hide_hire_conq_explo }
+		}
+		allow = {
+			#has_institution = new_world_i
+		}
+		effect = {
+			country_event = { id = extras.11 }
+		}
+	}
+	
+	tm_remove_burger_loan_priv = {
+		potential = {
+			OR = {
+				has_estate_privilege = estate_burghers_indebted_to_burghers
+				has_estate_privilege = estate_sedentary_subjects_indebted_to_sedentary_subjects
+			}
+			has_estate_loan = no
+		}
+		allow = {
+			#ai = no
+			#NOT = {
+			#	num_of_loans = 1
+			#}
+			always = yes
+		}
+		effect = {
+			if = {
+				limit = {
+					has_estate_privilege = estate_burghers_indebted_to_burghers
+				}
+				remove_estate_privilege= estate_burghers_indebted_to_burghers
+			}
+			if = {
+				limit = {
+					has_estate_privilege = estate_sedentary_subjects_indebted_to_sedentary_subjects
+				}
+				remove_estate_privilege= estate_sedentary_subjects_indebted_to_sedentary_subjects
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	# Advisor Event
+	tm_recruit_advisor_dec = {
+		major = no
+		potential = {
+			is_year = 1445
+			ai = no
+			OR = {
+				NOT = { has_country_modifier = so_recruit_adm_advisor }
+				NOT = { has_country_modifier = so_recruit_dip_advisor }
+				NOT = { has_country_modifier = so_recruit_mil_advisor }
+			}
+			
+		}
+		allow = {}
+		effect = {
+			country_event = {
+				id = extras.13
+			}
+		}
+	}
+
+}

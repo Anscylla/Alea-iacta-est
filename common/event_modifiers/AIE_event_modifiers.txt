@@ -4,3 +4,22 @@ cardinals_give_dev_cost = {
 	local_development_cost = -0.05
 
 }
+
+PR_manpower_edict_province = {
+	local_manpower_modifier = 0.25
+	local_state_maintenance_modifier = 2.0
+}
+
+PR_manpower_edict_cooldown = {
+	global_manpower = 0.001
+}
+
+so_recruit_adm_advisor = {
+
+}
+so_recruit_dip_advisor = {
+	
+}
+so_recruit_mil_advisor = {
+	
+}

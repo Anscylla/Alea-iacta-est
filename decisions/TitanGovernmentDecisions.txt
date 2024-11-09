@@ -1,0 +1,84 @@
+country_decisions = {
+
+	tm_change_gov_dec = {
+		major = no
+		potential = {
+			ai = no
+			OR = {
+				NOT = { has_country_flag = used_government_switch_monarchy }
+				NOT = { has_country_flag = used_government_switch_republic }
+				NOT = { has_country_flag = used_government_switch_theocracy }
+			}
+			adm_tech = 7
+			is_colonial_nation = no
+			NOT = { has_country_flag = tm_hide_change_government_type }
+		}
+		allow = {
+			is_at_war = no
+			OR = {
+				is_year = 1600
+				has_reform_on_level = 10
+				has_reform = english_monarchy
+				has_reform = prussian_monarchy
+				has_reform = elective_monarchy
+				has_reform = military_dictatorship_reform
+				has_reform = presidential_despot_reform
+				AND = {
+					government = tribal
+					is_year = 1500
+				}
+				AND = {
+					religion_group = muslim
+					government = theocracy
+				}
+				AND = {
+					has_reform = parliamentary_reform
+					adm_power = 200
+					is_year = 1500
+				}
+				AND = {
+					has_reform = states_general_reform
+					adm_power = 200
+					is_year = 1500
+				}
+				AND = {
+					has_reform = theocratic_democracy_reform
+					adm_power = 200
+					is_year = 1500
+				}
+				AND = {
+					has_reform = tsardom
+					adm_power = 200
+					is_year = 1500
+				}
+				AND = {
+					has_reform = broaden_executive_powers_reform
+					adm_power = 200
+					is_year = 1500
+				}
+				AND = {
+					has_reform = russian_republic
+					adm_power = 200
+					is_year = 1500
+				}
+				AND = {
+					has_reform = mon_state_religion
+					adm_power = 200
+					is_year = 1500
+				}
+				AND = {
+					has_reform = clerical_influencers
+					adm_power = 200
+					is_year = 1500
+				}
+			}
+		}
+		effect = {
+			country_event = {
+				id = extras.12
+			}
+		}
+	}
+}			
+
+		
