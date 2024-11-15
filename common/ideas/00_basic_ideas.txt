@@ -1792,6 +1792,8 @@ court_ideas = {
 	}
 	tranquil_coordination = {
 		reform_progress_growth = 0.2
+		global_prosperity_growth = 0.25
+		monarch_admin_power = 1
 	}
 	respected_authority = {
 		all_estate_possible_privileges = 1
@@ -1802,7 +1804,8 @@ court_ideas = {
 	}
 	court_embassies = {
 		possible_dip_policy = 1 
-		monarch_diplomatic_power = 1 
+		monarch_diplomatic_power = 1
+		all_power_cost = 0.02
 	}
 
 	ai_will_do = {
