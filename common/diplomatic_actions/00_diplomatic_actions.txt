@@ -770,15 +770,37 @@ break_alliance = {
 
 warsubsidy = {
 	condition = {
+
 		tooltip = SUB_ONLY_FOR_ALLIES
+
 		potential = {
 			FROM = {
-				NOT = { alliance_with = ROOT }
+
+				OR = {
+
+					alliance_with = ROOT
+
+					AND = {
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}
+					
+				}
+				
 			}
 		}
+
 		allow = {
 			FROM = {
-				alliance_with = ROOT
+				OR = {
+					alliance_with = ROOT
+					AND = {
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}
+					
+				}
+				
 			}
 		}
 	}
