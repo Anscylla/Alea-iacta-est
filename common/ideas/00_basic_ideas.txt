@@ -1503,7 +1503,6 @@ administrative_ideas = {
 		governing_capacity_modifier = 0.2
 		eunuchs_loyalty_modifier = 0.1
 	}
-
 	administrative_council = {
 		adm_advisor_cost = -0.25 
 	}
@@ -1764,7 +1763,6 @@ influence_ideas = {
 
 court_ideas = {
 	category = DIP
-
 
 	bonus = {
 		legitimacy = 0.5 
