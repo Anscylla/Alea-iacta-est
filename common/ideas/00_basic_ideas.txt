@@ -14,6 +14,7 @@ aristocracy_ideas = {
 
 	bonus = {
 		leader_siege = 1
+		cavalry_shock = 0.2
 		nobles_loyalty_modifier = 0.1
 		rajput_loyalty_modifier = 0.1
 		maratha_loyalty_modifier = 0.1
@@ -25,6 +26,7 @@ aristocracy_ideas = {
 	
 	noble_knights = {
 		cavalry_power = 0.15
+		leader_land_shock = 1
 	}
 	serfdom = {
 		global_manpower_modifier = 0.175
@@ -42,7 +44,6 @@ aristocracy_ideas = {
 	international_nobility = {
 		diplomats = 1
 		general_cost = -0.1
-		cavalry_shock = 0.2
 	}
 	rightful_conquest = {
 		fabricate_claims_cost = -0.5
@@ -1364,6 +1365,7 @@ quantity_ideas = {
 	}
 	the_old_and_infirm = {
 		land_maintenance_modifier = -0.10
+		naval_maintenance_modifier = -0.10
 	}
 	expanded_supply_trains = {
 		land_attrition = -0.25
@@ -1802,7 +1804,8 @@ court_ideas = {
 		all_estate_possible_privileges = 1
 	}
 	palace_of_splendor = {
-		monthly_splendor = 2 
+		monthly_splendor = 1
+		yearly_absolutism = 1 
 		estate_interaction_cooldown_modifier = -0.20
 	}
 	court_embassies = {
