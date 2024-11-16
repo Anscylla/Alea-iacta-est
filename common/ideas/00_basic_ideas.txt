@@ -1806,7 +1806,7 @@ court_ideas = {
 	court_embassies = {
 		possible_dip_policy = 1 
 		monarch_diplomatic_power = 1
-		all_power_cost = 0.02
+		all_power_cost = -0.02
 	}
 
 	ai_will_do = {
