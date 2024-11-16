@@ -1340,6 +1340,7 @@ quantity_ideas = {
 
 	bonus = {
 		land_forcelimit_modifier  = 0.40
+		naval_forcelimit_modifier = 0.20
 		special_unit_forcelimit = 0.20
 		num_of_pronoiars = 1
 	}
@@ -1350,6 +1351,7 @@ quantity_ideas = {
 	}
 	the_young_can_serve = {
 		manpower_recovery_speed = 0.20
+		sailors_recovery_speed = 0.20
 	}
 	enforced_service = {
 		global_regiment_cost = -0.15
