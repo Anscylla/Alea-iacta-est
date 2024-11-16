@@ -1258,6 +1258,7 @@ quality_ideas = {
 	}
 	finest_of_horses = {
 		cavalry_power = 0.1
+		cavalry_fire = 0.01
 	}
 	escort_ships = {
 		ship_durability = 0.05
