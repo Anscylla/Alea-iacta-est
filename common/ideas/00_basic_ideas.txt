@@ -264,7 +264,7 @@ theocracy_gov_ideas = {
 	}
 }
 
-indigenous_ideas = {e
+indigenous_ideas = {
 	category = MIL
 
 	bonus = {
