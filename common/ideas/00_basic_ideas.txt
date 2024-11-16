@@ -301,7 +301,7 @@ indigenous_ideas = {
 	ai_will_do = {
 		factor = 10
 	}
-}
+} 
 
 innovativeness_ideas = {
 	category = ADM
