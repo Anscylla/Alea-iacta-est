@@ -264,44 +264,44 @@ theocracy_gov_ideas = {
 	}
 }
 
-# indigenous_ideas = {
-# 	category = MIL
+indigenous_ideas = {e
+	category = MIL
 
-# 	bonus = {
-# 		global_institution_spread = 0.25
-# 	}
+	bonus = {
+		global_institution_spread = 0.25
+	}
 
-# 	trigger = {
-# 		has_government_attribute = enables_natives_idea_group
-# 	}
+	trigger = {
+		always = no
+	}
 
-# 	indigenous_bountiful_land = {
-# 		tribal_development_growth = 0.015
-# 		development_cost = -0.05
-# 	}
-# 	indigenous_irregular_warfare = {
-# 		hostile_attrition = 1
-# 	}
-# 	indigenous_constitution = {
-# 		monthly_reform_progress_modifier = 0.25
-# 	}
-# 	indigenous_braves = {
-# 		land_morale = 0.10
-# 	}
-# 	indigenous_controlled_burns = {
-# 		global_manpower_modifier = 0.15
-# 	}
-# 	indigenous_trade_with_foreigners = {
-# 		idea_cost = -0.1
-# 	}
-# 	indigenous_treaties = {
-# 		province_warscore_cost = -0.2
-# 	}
+	indigenous_bountiful_land = {
+		tribal_development_growth = 0.015
+		development_cost = -0.05
+	}
+	indigenous_irregular_warfare = {
+		hostile_attrition = 1
+	}
+	indigenous_constitution = {
+		monthly_reform_progress_modifier = 0.25
+	}
+	indigenous_braves = {
+		land_morale = 0.10
+	}
+	indigenous_controlled_burns = {
+		global_manpower_modifier = 0.15
+	}
+	indigenous_trade_with_foreigners = {
+		idea_cost = -0.1
+	}
+	indigenous_treaties = {
+		province_warscore_cost = -0.2
+	}
 
-# 	ai_will_do = {
-# 		factor = 10
-# 	}
-# }
+	ai_will_do = {
+		factor = 10
+	}
+}
 
 innovativeness_ideas = {
 	category = ADM
@@ -956,7 +956,7 @@ economic_ideas = {
 	}
 }
 
-# exploration_ideas = {
+exploration_ideas = {
 	category = DIP
 	important = yes
 
@@ -1136,9 +1136,9 @@ economic_ideas = {
 			}
 		}
 	}
-# }
+}
 
-# maritime_ideas = {
+maritime_ideas = {
 	category = DIP
 
 	trigger = {
@@ -1238,7 +1238,7 @@ economic_ideas = {
 			has_government_attribute = is_pirate_republic_reform
 		}
 	}
-# }
+}
 
 quality_ideas = {
 	category = MIL
@@ -1411,7 +1411,7 @@ quantity_ideas = {
 	}
 }
 
-# expansion_ideas = {
+expansion_ideas = {
 	category = ADM
 	important = yes
 
@@ -1495,7 +1495,7 @@ quantity_ideas = {
 			}
 		}
 	}
-# }
+}
 
 administrative_ideas = {
 	category = ADM
@@ -1692,7 +1692,7 @@ influence_ideas = {
 	}
 }
 
-# naval_ideas = {
+naval_ideas = {
 	category = MIL
 
 	trigger = {
@@ -1761,7 +1761,7 @@ influence_ideas = {
 			has_government_attribute = is_pirate_republic_reform
 		}
 	}
-# }
+}
 
 court_ideas = {
 	category = DIP
