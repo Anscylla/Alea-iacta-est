@@ -375,7 +375,7 @@ enforce_religious_law = {
 	}
 }
 
-the_tolerance_act = {trade
+the_tolerance_act = {
 	monarch_power = ADM
 
 	potential = {
