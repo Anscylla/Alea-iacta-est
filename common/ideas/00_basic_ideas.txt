@@ -1340,7 +1340,7 @@ quantity_ideas = {
 
 	bonus = {
 		land_forcelimit_modifier  = 0.40
-		allowed_marine_fraction = 0.20
+		special_unit_forcelimit = 0.20
 		num_of_pronoiars = 1
 	}
 	mass_army = {
