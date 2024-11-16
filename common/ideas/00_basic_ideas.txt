@@ -1885,8 +1885,7 @@ infrastructure_ideas = {
 	organised_construction = {
 		build_cost = -0.1
 		great_project_upgrade_cost = -0.10
-		great_project_upgrade_time = -0.10
-	}
+			}
 	efficient_construction_plans = {
 		expand_infrastructure_cost_modifier = -0.25
 	}
@@ -1903,6 +1902,7 @@ infrastructure_ideas = {
 	regulation_bureau = {
 		expand_administration_cost = -1
 		build_time = -0.25
+		great_project_upgrade_time = -0.10
 	}
 
 	ai_will_do = {
