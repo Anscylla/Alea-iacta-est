@@ -1,0 +1,641 @@
+paris_conquered = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+			NOT = {
+				OR = {
+					was_tag = BUR
+					was_tag = FRA
+					tag = FRA
+					tag = BUR
+					culture_group = french
+				}
+			}
+			is_core = 183
+			controls = 183
+		}
+	}	
+
+	land_morale = 0.05
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+london_conquered = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+			NOT = {
+				OR = {
+					was_tag = ENG
+					tag = ENG
+				}
+			}
+			is_core = 236
+			controls = 236
+		}
+	}	
+
+	naval_morale = 0.05
+	ship_durability = 0.01
+	infantry_power = 0.05
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+toledo_conquered = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+			NOT = {
+				OR = {
+					was_tag = CAS
+					tag = CAS
+					was_tag = ARA 
+					tag = ARA
+					was_tag = POR
+					tag = POR
+				}
+			}
+			is_core = 219
+			controls = 219
+		}
+	}	
+
+	infantry_power = 0.05
+	prestige = 0.025
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+stockholm_conquered = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+			NOT = {
+				OR = {
+					was_tag = SWE
+					tag = SWE
+				}
+			}
+			is_core = 1
+			controls = 1
+		}
+	}
+
+	infantry_power = 0.05
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+prague_conquered = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+			NOT = {
+				OR = {
+					was_tag = BOH 
+					tag = BOH
+				}
+			}
+			is_core = 266
+			controls = 266
+		}	
+	}	
+
+	discipline = 0.025
+	prestige = 0.025
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+warsaw_conquered = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+			NOT = {
+				OR = {
+					was_tag = POL
+					tag = POL
+					was_tag = MAZ
+					tag = MAZ
+				} 
+			}
+			is_core = 257
+			controls = 257
+		}	
+	}	
+
+	cavalry_power = 0.05
+	prestige = 0.025
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+rome_conquered = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+			NOT = {
+				OR = {
+					was_tag = ITA 
+					tag = ITA
+					was_tag = PAP 
+					tag = PAP
+				}
+			}
+			is_core = 118
+			controls = 118
+		}	
+	}	
+
+	discipline = 0.025
+	prestige = 0.025
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+venice_conquered = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+			NOT = {
+				OR = {
+					was_tag = VEN
+					tag = VEN
+				} 
+			}
+			is_core = 112
+			controls = 112
+		}
+	}
+
+	trade_efficiency = 0.05
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+constantinopole_conquered = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+			NOT = {
+				OR = {
+					was_tag = TUR
+					tag = TUR
+					was_tag = BYZ
+					tag = BYZ
+				}
+			}
+			is_core = 151
+			controls = 151
+		}
+	}	
+
+	idea_cost = -0.05
+	stability_cost_modifier = -0.1
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+cairo_conquered = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+			NOT = {
+				OR = {
+					was_tag = MAM 
+					tag = MAM
+				}
+			}
+			is_core = 361
+			controls = 361
+		}
+	}	
+
+	war_exhaustion = -0.05
+	caravan_power = 0.05
+	infantry_power = 0.05
+	cavalry_power = 0.05
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+jerusalem_conquered = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+			OR = {
+				religion_group = christian
+				religion_group = muslim
+				religion = jewish
+			}
+			NOT = { tag = MAM }
+			is_core = 379
+			controls = 379
+		}
+	}	
+
+	prestige = 0.025
+	culture_conversion_cost = -0.05
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+muscovy_conquered = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+			NOT = {
+				OR = {
+					tag = RUS
+					tag = MOS
+					was_tag = MOS
+					tag = NOV
+					was_tag = NOV
+					tag = BLO
+					was_tag = BLO
+					tag = TVE
+					was_tag = TVE
+					tag = RSO
+					was_tag = RSO
+					tag = YAR
+					was_tag = YAR
+					tag = RYA
+					was_tag = RYA
+					tag = OKA
+					was_tag = OKA
+					tag = PRM
+					was_tag = PRM
+				}
+			}
+			is_core = 295
+			controls = 295
+		}
+	}	
+
+	discipline = 0.025
+	prestige = 0.025
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+baghdad_conquered = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+			NOT = { tag = QAR }
+			is_core = 410
+			controls = 410
+		}
+	}	
+
+	prestige = 0.025
+	culture_conversion_cost = -0.05
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+
+
+
+
+
+
+destruction_of_delhi = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+			NOT = {
+				OR = {
+					was_tag = DLH 
+					tag = DLH
+					was_tag = SRH 
+					tag = SRH
+				} 
+			}
+			is_core = 522
+			controls = 522
+		}
+	}
+
+	discipline = 0.025
+	prestige = 0.03
+		
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+
+
+
+
+bastion_of_beijing = {
+	potential = {
+		normal_or_historical_nations = yes
+		#has_province_flag = wei_existed
+	}
+
+	trigger = {
+		owner = {
+			NOT = {
+				OR = {
+					was_tag = WEI
+					tag = WEI
+					was_tag = LNI
+					tag = LNI
+				} 
+			}
+			is_core = 1816
+			controls = 1816
+		}	
+	}	
+
+	cavalry_power = 0.05
+	prestige = 0.025
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+capture_of_canton = {
+	potential = {
+		normal_or_historical_nations = yes
+		#has_province_flag = wuu_existed
+	}
+
+	trigger = {
+		owner = {
+			NOT = {
+				OR = {
+					was_tag = WUU 
+					tag = WUU
+					was_tag = GDO
+					tag = GDO
+				} 
+			}
+			is_core = 667
+			controls = 667
+		}
+	}	
+
+	land_morale = 0.05
+	prestige = 0.025
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+occupation_of_chengdu = {
+	potential = {
+		normal_or_historical_nations = yes
+		#has_province_flag =shu_existed
+	}
+
+	trigger = {
+		owner = {
+			NOT = {
+				OR = {
+					was_tag = SHU
+					tag = SHU
+					was_tag = SCH
+					tag = SCH
+				} 
+			}
+			is_core = 679
+			controls = 679
+		}
+	}	
+
+	artillery_power = 0.025
+	infantry_power = 0.025
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+occupation_of_ayutthaya = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+			NOT = {
+				OR = {
+					was_tag = AYU
+					tag = AYU
+					was_tag = SIA
+					tag = SIA
+				}
+			}
+			is_core = 600
+			controls = 600
+		}	
+	}
+
+	cavalry_power = 0.05
+	prestige = 0.025
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+fall_of_pest = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+			NOT = {
+				OR = {
+					was_tag = HUN
+					tag = HUN
+				} 
+			}
+			is_core = 153
+			controls = 153
+		}	
+	}	
+
+	infantry_power = 0.05
+	prestige = 0.025
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+
+
+
+

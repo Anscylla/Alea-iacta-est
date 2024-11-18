@@ -1,0 +1,98 @@
+minor_ai_nation = {
+	potential = {
+		ai = yes
+		NOT = {
+			total_development = 300
+		}
+	}
+	trigger = {
+		ai = yes
+		NOT = {
+			total_development = 300
+		}
+	}
+
+	build_cost = -0.1
+	interest = -1
+	land_forcelimit_modifier = 0.1
+	advisor_cost = -0.15
+	advisor_pool = 2
+	global_regiment_cost = -0.1
+	ae_impact = -0.15
+	monthly_reform_progress = 0.25
+}
+
+minor_nation = {
+	potential = {
+		ai = no
+		NOT = {
+			total_development = 300
+		}
+	}
+	trigger = {
+		ai = no
+		is_great_power = no
+		NOT = {
+			total_development = 300
+		}
+	}
+
+	build_cost = -0.1
+	interest = -1
+	land_forcelimit_modifier = 0.1
+	advisor_cost = -0.2
+	advisor_pool = 2
+	global_regiment_cost = -0.1
+	ae_impact = -0.15
+	monthly_reform_progress = 0.25
+}
+
+300_dev_nation = {
+	potential = {
+		ai = no
+
+		is_great_power = no
+		total_development = 300
+		
+	}
+	trigger = {
+		ai = no
+		is_great_power = no
+		total_development = 300
+
+	}
+
+	build_cost = -0.05
+	interest = -0.5
+	land_forcelimit_modifier = 0.05
+	advisor_cost = -0.1
+	advisor_pool = 1
+	global_regiment_cost = -0.05
+	ae_impact = -0.1
+	monthly_reform_progress = 0.20
+}
+
+great_power_nation = {
+	potential = {
+		ai = no
+
+		NOT = { is_hegemon = yes }
+		is_great_power = yes
+		
+	}
+	trigger = {
+		ai = no
+		NOT = { is_hegemon = yes }
+		is_great_power = yes
+
+	}
+
+	build_cost = -0.025
+	interest = -0.25
+	land_forcelimit_modifier = 0.025
+	advisor_cost = -0.05
+	advisor_pool = 1
+	global_regiment_cost = -0.025
+	ae_impact = -0.05
+	monthly_reform_progress = 0.1
+}

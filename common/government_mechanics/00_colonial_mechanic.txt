@@ -158,4 +158,52 @@ colonial_mechanic = {
         }
     }
 
+    interactions = {
+        colonial_power_ability_1 = {
+            icon = GFX_christian_japan_adm_button
+            cost_type = colonial_power
+            cost = 10
+
+            effect = {
+                add_country_modifier = {
+                    name = colonization_efforts
+                    duration = 3650
+                }
+            }
+        }
+
+        colonial_power_ability_2 = {
+            icon = GFX_christian_japan_adm_button
+            cost_type = colonial_power
+            cost = 25
+
+            effect = {
+                add_country_modifier = {
+                    name = bli_colonies_modifier
+                    duration = 3650
+                }
+            }
+
+            ai_chance = {
+				factor = 1
+			}
+        }
+
+        colonial_power_ability_3 = {
+            icon = GFX_christian_japan_adm_button
+            cost_type = colonial_power
+            cost = 50
+
+            effect = {
+                add_country_modifier = {
+                    name = jap_new_world_exploration_modifier
+                    duration = 3650
+                }
+            }
+
+            ai_chance = {
+				factor = 1
+			}
+        }
+    }
 }
