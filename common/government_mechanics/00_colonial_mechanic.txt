@@ -1,0 +1,161 @@
+colonial_mechanic = {
+    alert_icon_gfx = GFX_alerticons_government_mechanics
+	alert_icon_index = 12
+    available = {
+        always = yes
+    }
+
+    powers = {
+        colonial_power = {
+            max = 100
+            base_monthly_growth = 0.15
+            show_before_interactions = yes
+            is_good = yes
+        
+            #1%
+            range_modifier = {
+                start_value = 1
+
+                modifier = {
+                    may_explore = yes
+                }
+            }
+
+            #3%
+            range_modifier = {
+                start_value = 3
+
+                modifier = {
+                    colonists = 1
+                }
+            }
+
+            #7%
+            range_modifier = {
+                start_value = 7
+
+                modifier = {
+                    range = 0.5 #To przy okazji zwieksza coring range
+                }
+            }
+
+            #10%
+            range_modifier = {
+                start_value = 10
+
+                modifier = {
+                    global_tariffs = 0.1
+                    envoy_travel_time = -0.2
+                }
+            }
+
+            #20%
+            range_modifier = {
+                start_value = 20
+
+                modifier = {
+                    global_colonial_growth = 10
+                }
+            }
+
+            #30%
+            range_modifier = {
+                start_value = 30
+
+                modifier = {
+                    treasure_fleet_income = 0.25
+                    global_ship_trade_power = 0.33
+                }
+            }
+
+            #40%
+            range_modifier = {
+                start_value = 40
+
+                modifier = {
+                    colonist_placement_chance = 0.1
+                }
+            }
+
+            #45%
+            range_modifier = {
+                start_value = 45
+
+                modifier = {
+                    colonists = 1
+                }
+            }
+
+            #50%
+            range_modifier = {
+                start_value = 50
+
+                modifier = {
+                    cb_on_primitives = yes
+                    global_colonial_growth = 15
+                    native_uprising_chance = -0.5
+                }
+            }
+
+            #60%
+            range_modifier = {
+                start_value = 60
+
+                modifier = {
+                    global_colonial_growth = 20
+                }
+            }
+
+            #70%
+            range_modifier = {
+                start_value = 70
+
+                modifier = {
+                    colonists = 1
+                    colonist_placement_chance = 0.05
+                }
+            }
+
+            #75%
+            range_modifier = {
+                start_value = 75
+
+                modifier = {
+                    light_ship_power = 0.05
+                    ship_power_propagation = 0.25
+                    merchants = 1
+                }
+            }
+
+            #80%
+            range_modifier = {
+                start_value = 80
+
+                modifier = {
+                    diplomats = 1
+                    reduced_liberty_desire_on_other_continent = 5
+                }
+            }
+
+            #90%
+            range_modifier = {
+                start_value = 90
+
+                modifier = {
+                    global_colonial_growth = 20
+                }
+            }
+
+            #100%
+            range_modifier = {
+                start_value = 100
+
+                modifier = {
+                    min_autonomy_in_territories = -0.1
+                    colony_development_boost = 1
+                }
+            }
+        }
+    }
+
+}
