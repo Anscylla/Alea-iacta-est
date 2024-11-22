@@ -165,7 +165,7 @@ horde_gov_ideas = {
 	}
 	
 	horse_lords = {
-		cavalry_cost = -0.15
+		cavalry_cost = -0.20
 		cav_to_inf_ratio = 0.10
 	}
 	beyond_the_sun = {
@@ -1581,7 +1581,6 @@ humanist_ideas = {
 
 	bonus = {
 		all_power_cost = -0.06
-		manpower_in_accepted_culture_provinces = 0.025
 		yearly_harmony = 0.25  # Used if religion uses harmony (confucianism)
 		brahmins_muslim_loyalty_modifier = 0.1
 		dhimmi_loyalty_modifier = 0.1
@@ -1803,7 +1802,7 @@ court_ideas = {
 	tranquil_coordination = {
 		reform_progress_growth = 0.2
 		global_prosperity_growth = 0.25
-		monarch_admin_power = 1
+		country_admin_power = 1
 	}
 	respected_authority = {
 		all_estate_possible_privileges = 1
@@ -1816,7 +1815,7 @@ court_ideas = {
 	court_embassies = {
 		possible_dip_policy = 1 
 		all_power_cost = -0.02
-		monarch_diplomatic_power = 1
+		country_diplomatic_power = 1
 	}
 
 	ai_will_do = {

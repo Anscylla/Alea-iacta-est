@@ -1248,7 +1248,6 @@ special_forces_act = {
 	
 	special_unit_forcelimit = 0.15
 	yearly_army_professionalism = 0.002
-	infantry_fire = 0.1
 
 	effect = {}
 	removed_effect = {}
