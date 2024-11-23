@@ -71,7 +71,7 @@
  celestial_seventh: "Vision"
  celestial_seventh_desc: "Plan everything before someone else plans for you"
 
- imperial_ideas: "HRE_Ideas"
+ imperial_ideas: "HRE Ideas"
  imperial_ideas_desc: "Full HRE"
 
  imperial_third: "Imperial Connections"
@@ -87,8 +87,7 @@
  imperial_fourth_desc: "A New Hope"
 
  imperial_fifth: "The One Ring"
- imperial_fifth_desc: "One Ring to rule them all, One Ring to find them,
-One Ring to bring them all and in the darkness bind them."
+ imperial_fifth_desc: "One Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkness bind them."
 
  imperial_sixth: "I'm faster than..."
  imperial_sixth_desc: "Be faster than others"
