@@ -232,7 +232,6 @@ idea_variation_act_113 = {
 		}	
 	}
 }
-
 idea_variation_act_114 = {
 
 	monarch_power = MIL
@@ -255,7 +254,6 @@ idea_variation_act_114 = {
 		factor = 1
 	}
 }
-
 idea_variation_act_115 = {
 
 	monarch_power = DIP
@@ -284,7 +282,6 @@ idea_variation_act_115 = {
 		}
 	}
 }
-
 idea_variation_act_116 = {
 
 	monarch_power = DIP
@@ -314,7 +311,6 @@ idea_variation_act_116 = {
 		}
 	}
 }
-
 idea_variation_act_117 = {
 
 	monarch_power = DIP
