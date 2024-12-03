@@ -366,11 +366,14 @@ basic_idea_variation_act_11 = {
 
 	potential = {
 		has_idea_group = Development_ideas
-		
+		has_idea_group = aristocracy_ideas
+
 			
 	}
 	allow = {
 		full_idea_group = Development_ideas
+		full_idea_group = aristocracy_ideas
+
 		iv_policy_all_groups = yes
 	}
 	
