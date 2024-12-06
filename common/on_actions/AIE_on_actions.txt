@@ -1,0 +1,6 @@
+on_five_year_pulse = {
+    random_events = {
+		90 = 0
+        10 = flavor.colonial.1
+    }
+}

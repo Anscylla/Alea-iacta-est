@@ -1,0 +1,34 @@
+namespace = Flavor_Colonial
+
+country_event = {
+	id = flavor_colonial.1
+	title = colonial_disaster_title
+	desc = colonial_disaster_desc
+	picture = HARBOUR_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		
+		OR = {
+			any_subject_country = {
+				is_colonial_nation_of = root
+			
+			}
+			has_government_power = {
+				mechanic_type = colonial_mechanic
+				power_type = colonial_power
+				value = 25
+			}
+		}
+	}
+
+	option = {
+		name = colonial_disaster.a
+		add_government_power = {
+        	mechanic_type = colonial_mechanic
+        	power_type = colonial_power
+        	value = -5
+		}
+	}
+}
