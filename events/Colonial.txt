@@ -28,9 +28,10 @@ province_event = {
 	}
 	
 	trigger = {
-		OR = {
-			owner = { has_idea_group = exploration_ideas }
-			owner = { has_idea_group = expansion_ideas }
+		has_government_power = {
+			mechanic_type = colonial_mechanic
+			power_type = colonial_power
+			value = 40
 		}
 		has_empty_adjacent_province = yes
 		owner = { NOT = { num_of_colonies = 2 } }
